@@ -9,7 +9,10 @@ function App() {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<HomePage />} />
       </Route>
-    )
+    ),
+    {
+      basename: '/react-template1', // Set basename to match your GitHub Pages repo name
+    }
   )
 
   return <RouterProvider router={router} />
